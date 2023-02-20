@@ -46,7 +46,7 @@
     <Content Include="Images\LP-Image.png" />
     <Content Include="Images\Me-Image.jpg" />
     <Content Include="Images\SB-Image.png" />
-    <Content Include="Index.html" />
+    <Content Include="index.html" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
