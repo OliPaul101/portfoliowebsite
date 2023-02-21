@@ -39,12 +39,17 @@
     <Content Include="CSS\Styles.css" />
     <Content Include="Game-Pages\DW-Page.html" />
     <Content Include="Images\Amalie-Image.png" />
+    <Content Include="Images\Code-Snippets\EnemyBehaviourTree-Snippet.png" />
+    <Content Include="Images\Code-Snippets\EnemyController-Snippet.png" />
     <Content Include="Images\DW-Image.png" />
     <Content Include="Images\HR-Image.png" />
     <Content Include="Images\HR-Image2.png" />
     <Content Include="Images\JN-Image.png" />
     <Content Include="Images\LP-Image.png" />
     <Content Include="Images\Me-Image.jpg" />
+    <Content Include="Images\Misc-Images\DWLevel1-Image.png" />
+    <Content Include="Images\Misc-Images\DWLevel2-Image.png" />
+    <Content Include="Images\Misc-Images\DWLevelDesign-Image.png" />
     <Content Include="Images\SB-Image.png" />
     <Content Include="index.html" />
   </ItemGroup>
