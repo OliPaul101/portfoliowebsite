@@ -42,6 +42,8 @@
     <Content Include="Images\Code-Snippets\EnemyBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyController-Snippet.png" />
     <Content Include="Images\DW-Image.png" />
+    <Content Include="Images\GIFs\DW-GIF.gif" />
+    <Content Include="Images\GIFs\DWSlime-GIF.gif" />
     <Content Include="Images\HR-Image.png" />
     <Content Include="Images\HR-Image2.png" />
     <Content Include="Images\JN-Image.png" />

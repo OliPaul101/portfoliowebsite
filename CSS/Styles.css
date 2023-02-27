@@ -25,9 +25,12 @@
     color: white;
 }
 
-.portfolioTitle{
-    margin-right:15%;
-    margin-left:15%;
+.projectsShowcase{
+    background-image:url(../Images/GIFs/DW-GIF.gif);
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
 }
 
 .portfolioTitle h1 {
@@ -159,7 +162,6 @@
 
 .aboutContainer {
     background-color: #232323;
-    margin-top: 50px;
     color: white;
     width:100%;
     overflow:hidden;
