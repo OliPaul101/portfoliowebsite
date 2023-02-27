@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../CSS/Styles.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Oli Paul</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" style="color:white;"><i class="fa fa-square"></i> OLI PAUL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="parallax" style="background-image:url(../Images/LP-Image.png);"></div>
+
+    <div class="gamePageIntro">
+        <h1>Llama Party</h1>
+
+        <ul>
+            <li><div class="unity-tag" style="background-color:#ebebeb"><p>Unity</p></div></li>
+            <li><div class="Csharp-tag"><p>C#</p></div></li>
+        </ul>
+
+        <h2>Intro</h2>
+        <p>
+            Llama Party is my final project for year 3 for my BSc Games Development course at Norwich University of the Arts. Inspired by card games such as Hearthstone, Marvel Snaps and
+            Gwent, Llama Party is my take on the card game genre. Using AI generated art for the card art and machine learning agents for the AI, this game is truly the AI passion project of my dreams.
+            The goal of Llama Party is quite simple, you must accumulate the most Llama Points to win. To accumulate these points you must play cards. Cards however can be destroyed, headbutt, yelled at, etc.
+        </p>
+
+        <p>
+            Because this project is still in development, not everything from the project will be shown:
+        </p>
+        <p>
+            <b>However, keep an eye on this page/ on my socials as I plan on posting gameplay videos soon!</b>
+        </p>
+
+        <!-- Collapsible info -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Screenshots <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="../Images/Misc-Images/LP1-Image.png" style="margin-bottom:25px;" />
+                        <img src="../Images/Misc-Images/LP2-Image.png" style="margin-bottom:25px;" />
+                        <img src="../Images/Misc-Images/LP3-Image.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        Turn Based Script <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="../Images/Code-Snippets/LPBattleState1-Snippet.png" style="width:50%; height:auto;" />
+
+                        <p>
+                            Using an enum to track whose turn is whose and to see if the player has lost or won, the 'BattleSystem' controls the entire flow of the game
+                            It also keeps track of the number of turns and executes a simple AI for testing.
+                        </p>
+
+                        <img src="../Images/Code-Snippets/LPBattleState2-Snippet.png" style="width:50%; height:auto;" />
+
+                        <p>
+                            IEnumerators allow me to further control the flow of the game as the game can say what turn is starting, then wait 2 seconds, the start the players turn.
+                            At the start of the players turn, the BattleState script calls functions from the 'orbSystem' and the 'drawSystem'. The orbSystem is called to reset the
+                            players orbs back up to the maximum which is 3 and the draw system is used to draw cards.
+                        </p>
+
+                        <img src="../Images/Code-Snippets/LPBattleState3-Snippet.png" style="width:50%; height:auto;" />
+
+                        <p>
+                            Once the player ends their turn, a coroutine then starts the enemy's turn and the BattleState script executes the simple AI
+                            I programmed that only plays one card as I am still testing the cards mechanics. After the basic AI has played its card, it ends its turn
+                            and starts the players turn again at the beginning of turn 2.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer/ Contact Me -->
+        <div class="contactContainer" id="section3" style="padding-bottom:25px;">
+            <div class="portfolioTitle text-center container">
+                <div class="row">
+                    <div class="col">
+                        <h1><i class="fa fa-square"></i> Contact Me</h1>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+            <p>
+                Feel free to contact me on any of my listed social media or send me an email at: <br />
+                <b>olipaul036@gmail.com</b>
+            </p>
+
+            <a href="https://www.linkedin.com/in/oli-paul-138059197/" class="fa fa-linkedin" style="font-size:28px;"></a>
+            <a href="https://twitter.com/OliPaul036" class="fa fa-twitter" style="font-size:28px;"></a>
+        </div>
+    </div>
+
+
+</body>
+</html>

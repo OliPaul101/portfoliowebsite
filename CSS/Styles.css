@@ -183,9 +183,11 @@
 
 .contactContainer {
     padding-top:10px;
-    background-color: rgb(17 17 17);
-    color:white;
-    position:sticky;
+    background-color: white;
+    color:black;
+    overflow:hidden;
+    text-align:center;
+    width:100%;
 }
 
 .contactInfo{

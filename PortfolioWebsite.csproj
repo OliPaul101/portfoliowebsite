@@ -37,10 +37,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Styles.css" />
+    <Content Include="Game-Pages\LP-Page.html" />
+    <Content Include="Game-Pages\Amalie-Page.html" />
+    <Content Include="Game-Pages\HR-Page.html" />
     <Content Include="Game-Pages\DW-Page.html" />
     <Content Include="Images\Amalie-Image.png" />
+    <Content Include="Images\AmalieNew-Image.png" />
+    <Content Include="Images\Code-Snippets\AmalieBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyController-Snippet.png" />
+    <Content Include="Images\Code-Snippets\LPBattleState1-Snippet.png" />
+    <Content Include="Images\Code-Snippets\LPBattleState2-Snippet.png" />
+    <Content Include="Images\Code-Snippets\LPBattleState3-Snippet.png" />
     <Content Include="Images\DW-Image.png" />
     <Content Include="Images\GIFs\DW-GIF.gif" />
     <Content Include="Images\GIFs\DWSlime-GIF.gif" />
@@ -49,9 +57,19 @@
     <Content Include="Images\JN-Image.png" />
     <Content Include="Images\LP-Image.png" />
     <Content Include="Images\Me-Image.jpg" />
+    <Content Include="Images\Misc-Images\Amalie1-Image.png" />
+    <Content Include="Images\Misc-Images\Amalie2-Image.png" />
+    <Content Include="Images\Misc-Images\Amalie3-Image.png" />
     <Content Include="Images\Misc-Images\DWLevel1-Image.png" />
     <Content Include="Images\Misc-Images\DWLevel2-Image.png" />
     <Content Include="Images\Misc-Images\DWLevelDesign-Image.png" />
+    <Content Include="Images\Misc-Images\HRDecrement-Image.png" />
+    <Content Include="Images\Misc-Images\HRRoom-Image.png" />
+    <Content Include="Images\Misc-Images\HRUpdateDoors-Image.png" />
+    <Content Include="Images\Misc-Images\HRUpdateDoorsZoomed-Image.png" />
+    <Content Include="Images\Misc-Images\LP1-Image.png" />
+    <Content Include="Images\Misc-Images\LP2-Image.png" />
+    <Content Include="Images\Misc-Images\LP3-Image.png" />
     <Content Include="Images\SB-Image.png" />
     <Content Include="index.html" />
   </ItemGroup>

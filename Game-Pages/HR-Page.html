@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../CSS/Styles.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Oli Paul</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" style="color:white;"><i class="fa fa-square"></i> OLI PAUL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="parallax" style="background-image:url(../Images/HR-Image2.png);"></div>
+
+    <div class="gamePageIntro">
+        <h1>Hardest Route</h1>
+
+        <ul>
+            <li><div class="ue5-tag"><p>UE5</p></div></li>
+            <li><div class="bp-tag"><p>Blueprint</p></div></li>
+        </ul>
+
+        <h2>Intro</h2>
+        <p>
+            The Hardest Route was a game developed for the Global Game Jam 2023. The theme for the jam was 'ROOTS' so naturally we tried to think outside the box
+            and came up with Hardest 'Route'. We were quite a small team with only five people (including myself).
+            However, because of the small team, I found myself doing a lot more general jobs that I may have not done before. For example,
+            I had to import all the assets, create animation blueprints, program the rooms, program the pick up, do the lighting for the level, etc.
+
+
+        </p>
+
+        <p>
+            Below you find some examples of some of my work along with a link to a trailer, Game Jam Reel and the download page:
+        </p>
+
+        <a href="https://www.youtube.com/watch?v=pIXI_-lv7Xo"><p> Trailer </p></a>
+        <a href="https://www.nua.ac.uk/about-nua/news/global-game-jam-2023/"><p> NUA Global Game Jam Reel </p></a>
+        <a href="https://globalgamejam.org/2023/games/hardest-route-1"><p> Download Page </p></a>
+
+        <!-- Collapsible info -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Rooms Blueprint <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="../Images/Misc-Images/HRRoom-Image.png" />
+
+                        <p>
+                            This is the blueprint for the rooms I created that we used for Hardest Route. Each room had four doors and the doors had
+                            to be closed if the player was with an enemy and they had to open when the enemy was defeated, or when they ran out of stamina.
+                            Each room also had its own camera that the players perspective changed to whenever they went into a new room. Ideally there would
+                            be only one camera in use but because we only had 48 hours it was much faster for me to make it so that the players perspective would
+                            jump from one camera to the other, instead of one camera being used and making that jump to where I want.
+                        </p>
+
+                        <p>
+                            There are also some variables in use as well. Most of these are simple checks to see if the player is still inside the room,
+                            if the player has finished the room or if the room is empty to begin with. But, there is also an integer that keeps track of how
+                            many enemies we spawned in the room. As we were making a game about finding the best route around the level, some rooms would have 3, 2 or possibly
+                            no enemies in at all. So it was important to keep track.
+                        </p>
+
+                        <img src="../Images/Misc-Images/HRDecrement-Image.png" />
+
+                        <p>
+                            Above is a very simple blueprint function but I wanted to show how the Enemy Count integer was being used. Enemy Count was being used
+                            to not only keep track but also to check if a room was finished or not. Essentially we want the room doors to open when the enemies are
+                            defeated so whenever that happens to an enemy we decrement the enemy count. If the enemy count for that room then drops below 0 then the doors
+                            open and the player can proceed.
+                        </p>
+
+                        <img src="../Images/Misc-Images/HRUpdateDoorsZoomed-Image.png" />
+
+                        <p>
+                            With the enemies tracked and counted, I would use this to update the doors in the room. It was quite simple, whenever the Update Doors function was called,
+                            it would see if the player was inside the room first. Then it would check to see if the enemy count is greater than 0. If not then the doors would stay shut, by
+                            making their Z location 0. If the enemies were defeated, i.e. the enemy counter is less than or equal to 0, then doors would open, by setting their z location
+                            to -500. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer/ Contact Me -->
+        <div class="contactContainer" id="section3" style="padding-bottom:25px;">
+            <div class="portfolioTitle text-center container">
+                <div class="row">
+                    <div class="col">
+                        <h1><i class="fa fa-square"></i> Contact Me</h1>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+            <p>
+                Feel free to contact me on any of my listed social media or send me an email at: <br />
+                <b>olipaul036@gmail.com</b>
+            </p>
+
+            <a href="https://www.linkedin.com/in/oli-paul-138059197/" class="fa fa-linkedin" style="font-size:28px;"></a>
+            <a href="https://twitter.com/OliPaul036" class="fa fa-twitter" style="font-size:28px;"></a>
+        </div>
+    </div>
+
+
+</body>
+</html>
