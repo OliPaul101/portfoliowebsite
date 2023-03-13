@@ -37,11 +37,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Styles.css" />
+    <Content Include="Game-Pages\SB-Page.html" />
+    <Content Include="Game-Pages\JN-Page.html" />
     <Content Include="Game-Pages\LP-Page.html" />
     <Content Include="Game-Pages\Amalie-Page.html" />
     <Content Include="Game-Pages\HR-Page.html" />
     <Content Include="Game-Pages\DW-Page.html" />
     <Content Include="Images\Amalie-Image.png" />
+    <Content Include="Images\Amalie-Images\Amalie-AIDebug-Image.png" />
+    <Content Include="Images\Amalie-Images\Amalie-Code-Snippets\Amalie-AIPerception-Snippet.png" />
+    <Content Include="Images\Amalie-Images\Amalie-Code-Snippets\Amalie-BallVector-Snippet.png" />
+    <Content Include="Images\Amalie-Images\Amalie-Code-Snippets\Amalie-FetchTask-Snippet.png" />
+    <Content Include="Images\Amalie-Images\Amalie-Code-Snippets\Amalie-RoamTask-Snippet.png" />
+    <Content Include="Images\Amalie-Images\Amalie-Code-Snippets\AmalieBehaviourTree-Snippet-New.png" />
+    <Content Include="Images\Amalie-Images\Amalie-MainMenu-Image.png" />
+    <Content Include="Images\Amalie-Images\Petting-Image.png" />
+    <Content Include="Images\Amalie-Images\Sitting-Image.png" />
     <Content Include="Images\AmalieNew-Image.png" />
     <Content Include="Images\Code-Snippets\AmalieBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyBehaviourTree-Snippet.png" />

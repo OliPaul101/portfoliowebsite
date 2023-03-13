@@ -12,7 +12,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Oli Paul</title>
+    <title>Oli Paul - Amalie</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -28,11 +28,10 @@
     <div class="parallax" style="background-image:url(../Images/AmalieNew-Image.png);"></div>
 
     <div class="gamePageIntro">
-        <h1>Amalie (or Dog Walking Simulator)</h1>
+        <h1>Dog Walking Simulator</h1>
 
         <ul>
             <li><div class="ue4-tag"><p>UE4</p></div></li>
-            <li><div class="Cplus-tag"><p>C++</p></div></li>
             <li><div class="bp-tag"><p>Blueprint</p></div></li>
         </ul>
 
@@ -60,8 +59,9 @@
                 </div>
                 <div id="collapseOne" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <img src="../Images/Misc-Images/Amalie1-Image.png" style="margin-bottom:25px;" />
-                        <img src="../Images/Misc-Images/Amalie2-Image.png" style="margin-bottom:25px;" />
+                        <img src="../Images/Amalie-Images/Amalie-MainMenu-Image.png" style="margin-bottom:25px;"/>
+                        <img src="../Images/Amalie-Images/Petting-Image.png" style="margin-bottom:25px;" />
+                        <img src="../Images/Amalie-Images/Sitting-Image.png" style="margin-bottom:25px;" />
                         <img src="../Images/Misc-Images/Amalie3-Image.png" />
                     </div>
                 </div>
@@ -75,13 +75,65 @@
                 </div>
                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <img src="../Images/Code-Snippets/AmalieBehaviourTree-Snippet.png" />
+                        <img src="../Images/Amalie-Images/Amalie-Code-Snippets/AmalieBehaviourTree-Snippet-New.png" />
 
                         <p>
-                            This is the behaviour tree for Amalie (the dog) at the time of writing this. I plan on adding more mechanics and functionality to Amalie so this
-                            should hopefully look bigger later on. Right now however, Amalie can roam around the player, run after the tennis ball and bring the tennis ball back.
-                            For the future, I plan on adding an 'idle' state when if the player is sitting down or standing still Amalie will sit idle in front of them. I also plan
-                            on 'interest points' wich are essentially places Amalie can go an sniff or look at.
+                            This is the behaviour tree for Amalie (the dog) in Dog Walking Simulator. Right now Amalie can Roam, Idle/ Interact,
+                            Fetch (or chase ball), and then return with the ball to the player.
+                        </p>
+
+                        <img src="../Images/Amalie-Images/Amalie-Code-Snippets/Amalie-RoamTask-Snippet.png" />
+                        <p>
+                            When my custom task ‘Roam’ is being executed in the behaviour tree, Amalie will pick a
+                            point within the radius specified around the player every 1.5 seconds. This point within a
+                            radius is calculated by getting the players current location and using ‘Random float in range’
+                            math function and setting the minimum to be players current position –400cm ( as one unreal
+                            unit is equal to one centimeter), and the same is done for the maximum except adding 400cm to
+                            the players current position. This is done for both the X and the Y axis but not the Z as we
+                            don’t want the dog to start walking to the sky or potentially sink through the floor. This
+                            information is then passed into a simple move function and now the dog can roam around the
+                            player. It is also important to mention that the dog only roams around the player if the player
+                            is moving. Which brings me onto the idle function.
+                        </p>
+
+                        <p>
+                            The custom task ‘Idle’ only executes when ‘Idle’. ‘Idle’ is a
+                            blackboard boolean key that the AI controller can change. To do this there is a very simple
+                            check, the AI controller simply checks every frame to see if the velocity of the player
+                            character is less than or equal to 0. If true then ‘Idle’ is set and the dog will sit idly
+                            waiting. If false then the dog will continue to roam.
+                        </p>
+
+                        <img src="../Images/Amalie-Images/Amalie-AIDebug-Image.png" />
+                        <p>
+                            To give a sense of realism I decided to experiment with AI perception on my AI dog. The dog
+                            has a cone of vision in front of it, like in real life, and it can now see game objects in
+                            the level and tell what they are. So, I programmed it to see the ball you
+                            can see that the dog can in fact see the ball. But, I also wanted the dog to chase the ball
+                            after seeing it.
+                        </p>
+
+                        <img src="../Images/Amalie-Images/Amalie-Code-Snippets/Amalie-AIPerception-Snippet.png" />
+                        <p>
+                            So when the dog sees the ball, it casts and checks to see if the ball is valid. If it is valid,
+                            a custom function that I made called ‘Set Ball Vector’ then gets executed (This is all happening
+                            within the AI controller).
+                        </p>
+
+                        <img src="../Images/Amalie-Images/Amalie-Code-Snippets/Amalie-BallVector-Snippet.png" />
+                        <p>
+                            The custom function ‘Set Ball Vector’ essentially sets the ball that the dog has just now seen
+                            as the current ball. ‘Current Ball’ is a variable in the AI controller.
+                        </p>
+
+                        <img src="../Images/Amalie-Images/Amalie-Code-Snippets/Amalie-FetchTask-Snippet.png" />
+                        <p>
+                            Now that ‘Current Ball’ is set. The Fetch_BTT task can now cast to the AI controller 
+                            and get the current balls location. After getting the location, it simply calls an AI 
+                            move to function and the dog will now move towards the current balls current location. 
+                            You may also notice that the task executes every tick (frame). This is because the ball 
+                            that is being thrown by the player will constantly keep rolling/ moving so this task needs 
+                            to keep updating the position of the ball so the dog can retrieve it.
                         </p>
                     </div>
                 </div>
