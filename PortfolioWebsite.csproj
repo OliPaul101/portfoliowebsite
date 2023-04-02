@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Styles.css" />
+    <Content Include="Game-Pages\Brewmaster-Page.html" />
     <Content Include="Game-Pages\SB-Page.html" />
     <Content Include="Game-Pages\JN-Page.html" />
     <Content Include="Game-Pages\LP-Page.html" />
@@ -54,6 +55,10 @@
     <Content Include="Images\Amalie-Images\Petting-Image.png" />
     <Content Include="Images\Amalie-Images\Sitting-Image.png" />
     <Content Include="Images\AmalieNew-Image.png" />
+    <Content Include="Images\Brewmaster-Images\Brewmaster Logo.png" />
+    <Content Include="Images\Brewmaster-Images\EnemyBestiary.png" />
+    <Content Include="Images\Brewmaster-Images\EnemyBestiaryDoc.png" />
+    <Content Include="Images\Brewmaster-Images\EnemyMechanicDoc.png" />
     <Content Include="Images\Code-Snippets\AmalieBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyController-Snippet.png" />

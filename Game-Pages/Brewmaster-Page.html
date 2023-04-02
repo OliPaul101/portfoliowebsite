@@ -25,66 +25,52 @@
         </div>
     </nav>
 
-    <div class="parallax"></div>
+    <div class="parallax" style="background-image:url('../Images/Brewmaster-Images/Brewmaster Logo.png');"></div>
 
     <div class="gamePageIntro">
-        <h1>Digital Wizards</h1>
+        <h1>Brewmaster</h1>
 
         <ul>
-            <li><div class="ue4-tag"><p>UE4</p></div></li>
+            <li><div class="ue5-tag"><p>UE5</p></div></li>
             <li><div class="Cplus-tag"><p>C++</p></div></li>
         </ul>
 
         <h2>Intro</h2>
         <p>
-            Digital Wizards was a project I worked on as my final project of Game Development year 2 at my University, NUA.
-            Digital Wizards is a top down 3D rogue like where the player has to collect spells in order to defeat enemies
-            and traverse a dangerous environment. The project had seven people (including myself) and my primary role
-            was enemy AI and level design.
+            Me and my team were tasked by our University, Norwich University of the Arts, to come up with a game idea, create a design document and a pitch for it, and then create a prototype, all in a week. So,
+            we got thinking and came up with a Brewmaster. Brewmaster is a top down dungeon crawling adventure featuring challenging potion crafting combat.
         </p>
 
-        <p>
-            Below you find some examples of my work along with a link to a gameplay video:
-        </p>
-
-        <h2 style="text-align:center;">Gameplay</h2>
-
-        <iframe width="500" height="415" style="margin-right:auto; margin-left:auto; display:block;" src="https://www.youtube.com/embed/zlEsOjd9G6I" frameborder="0" allowfullscreen></iframe>
+        <div class="text-center" style="margin-bottom: 25px;">
+            <button type="button" onclick="parent.location='https://docs.google.com/document/d/1vMMZ5XFVaCiqThm1fBdH8-QMWlPyQ6aBDpqtS3xWAHw/edit?usp=sharing'" style="margin-left:auto;margin-right:auto;" class="btn btn-primary">Design Doc</button>
+            <button type="button" onclick="parent.location='https://drive.google.com/file/d/1frPlAWjhAxm0wuRp0hnXdyvqrnrqHdrW/view?usp=share_link'" style="margin-left:auto;margin-right:auto;" class="btn btn-success">Game Pitch</button>
+        </div>
 
         <!-- Collapsible info -->
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                        Enemy AI <i class="fa fa-caret-square-o-down"></i>
+                        My Designs <i class="fa fa-caret-square-o-down"></i>
                     </a>
                 </div>
                 <div id="collapseOne" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <img src="../Images/Code-Snippets/EnemyController-Snippet.png" />
+                        <img src="../Images/Brewmaster-Images/EnemyBestiary.png" />
 
                         <p>
-                            This code snippet is from the enemy controller CPP file. It essentially creates behaviour
-                            tree and blackboard components, both used in Unreal Engine 4 to control AI. After that
-                            the enemy controller then checks to see if it possessing a pawn. If false or 'nullptr',
-                            it simply returns. If the check is not 'nullptr', then it casts to the enemy it is possessing
-                            and checks to see if that enemy has a behaviour tree component. If that enemy does, then it initialises
-                            the blackboard and executes the behaviour tree.
+                            The image above is from the Brewmaster game pitch and is a good summary of what different enemies we have/ have planned for Brewmaster.
+                            After we decided about what enemies will be in the game, it was time for me to start designing their statistics (i.e health, weaknesses, damage, etc) and how
+                            they would interact with the world and player.
                         </p>
 
-                        <img src="../Images/Code-Snippets/EnemyBehaviourTree-Snippet.png" />
+                        <img src="../Images/Brewmaster-Images/EnemyBestiaryDoc.png" style="width:40%; height:auto;" />
+                        <img src="../Images/Brewmaster-Images/EnemyMechanicDoc.png" style="width:40%; height:auto;" />
 
                         <p>
-                            This is the behaviour tree for our basic punching slime enemy. The punching slime enemy would patrol,
-                            as shown by the sequence to the right, until it the player entered its detection radius. If the player
-                            entered its detection radius, a 'target' would be set and the slime enemy would start to walk towards
-                            the player.
-                        </p>
-
-                        <p>
-                            We finished the project with three types of enemies. The slow punching slime, that patrolled around a
-                            level; a bomb rushing skeleton that, when the player is detected, runs toward the player and explodes;
-                            and finally a stationary mimic that only gets triggered once the player enters its radius.
+                            I wanted the enemies in Brewmaster to work together in groups so I had an idea that if the player walked into just one enemy's line of sight,
+                            that enemy would alert the rest and they would all swarm the player. I felt it best that the enemies swarmed the player in groups so the potion combat
+                            would feel more satisfying, as throwing potions that have AOE into a crowd of enemies would, I assume, be more fun and rewarding.
                         </p>
                     </div>
                 </div>
@@ -93,7 +79,35 @@
             <div class="card">
                 <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                        Level Design <i class="fa fa-caret-square-o-down"></i>
+                        AI Code <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="../Images/Misc-Images/DWLevelDesign-Image.png" />
+
+                        <p>
+                            One of my other main tasks for Digital Wizards was designing and building the second level. Although I
+                            haven't much experience in level design, I decided to create a plan, and that helped a lot
+                            when it came to building the actual level in the Unreal Engine 4 editor.
+                        </p>
+
+                        <p>
+                            The goal for the second level was to show off the enemy AI. So with that in mind, I designed the second
+                            half of the level (the bottom image) to be an arena. When the player enters the arena, a gate slams shut
+                            and big punching slime enemys spawn and ambush the player.
+                        </p>
+
+                        <img src="../Images/Misc-Images/DWLevel1-Image.png" />
+                        <img src="../Images/Misc-Images/DWLevel2-Image.png" style="margin-top:20px;" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        More of my Contribution <i class="fa fa-caret-square-o-down"></i>
                     </a>
                 </div>
                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
