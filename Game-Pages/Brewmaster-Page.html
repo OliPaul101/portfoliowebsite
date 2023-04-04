@@ -12,7 +12,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Oli Paul - Digital Wizards</title>
+    <title>Oli Paul - Brewmaster</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -84,50 +84,60 @@
                 </div>
                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <img src="../Images/Misc-Images/DWLevelDesign-Image.png" />
+                        <img src="../Images/Brewmaster-Snippets/SetupPerception-Snippet.jpg" />
 
                         <p>
-                            One of my other main tasks for Digital Wizards was designing and building the second level. Although I
-                            haven't much experience in level design, I decided to create a plan, and that helped a lot
-                            when it came to building the actual level in the Unreal Engine 4 editor.
+                            Firstly, the perception component has to be setup. The bottom line adds a dynamic, essentially a function to execute
+                            if the perception component sees an actor. The function to execute is called 'OnPawnDetect'.
+                        </p>
+
+                        <img src="../Images/Brewmaster-Snippets/PawnDetect-Snippet.jpg" />
+
+                        <p>
+                            The 'OnPawnDetect' function has a parameter of an array of actors. Then there is a for loop, that loops through all the actors
+                            in that array, the actors in the array are actors that this perception component can see. During the loop, if the actor in the array
+                            is the players character, or 'AFiveStackPotionGameCharacter', then another function called 'AlertEnemies' is executed. Also, the blackboard
+                            value 'Player', is also set to the player character.
+                        </p>
+
+                        <img src="../Images/Brewmaster-Snippets/AlertEnemies1-Snippet.jpg" />
+
+                        <p>
+                            The AlertEnemies function essentially creates a radius around the enemy that has seen the player. This radius is set to collide specifically with pawns,
+                            as other enemies are just pawns.
+                        </p>
+
+                        <img src="../Images/Brewmaster-Snippets/AlertEnemies2-Snippet.jpg" />
+
+                        <p>
+                            After the radius is created, then enters a similar for loop used earlier that goes through the overlapping actors within the radius.
+                            If an overlapping actor is another enemy, then it executes a function on that enemy called 'chasePlayer'.
                         </p>
 
                         <p>
-                            The goal for the second level was to show off the enemy AI. So with that in mind, I designed the second
-                            half of the level (the bottom image) to be an arena. When the player enters the arena, a gate slams shut
-                            and big punching slime enemys spawn and ambush the player.
+                            Chase player does, you guessed it, chase the player. Without having seen the player it sets the backboard value 'Player', like before, to
+                            the player character that the original enemy has seen.
                         </p>
-
-                        <img src="../Images/Misc-Images/DWLevel1-Image.png" />
-                        <img src="../Images/Misc-Images/DWLevel2-Image.png" style="margin-top:20px;" />
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
                         More of my Contribution <i class="fa fa-caret-square-o-down"></i>
                     </a>
                 </div>
-                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <img src="../Images/Misc-Images/DWLevelDesign-Image.png" />
 
                         <p>
-                            One of my other main tasks for Digital Wizards was designing and building the second level. Although I
-                            haven't much experience in level design, I decided to create a plan, and that helped a lot
-                            when it came to building the actual level in the Unreal Engine 4 editor.
+                            Some of my other contributions to the designs was porting to console and 'How & When To Craft Your Potions'.
                         </p>
 
-                        <p>
-                            The goal for the second level was to show off the enemy AI. So with that in mind, I designed the second
-                            half of the level (the bottom image) to be an arena. When the player enters the arena, a gate slams shut
-                            and big punching slime enemys spawn and ambush the player.
-                        </p>
+                        <img src="../Images/Brewmaster-Images/Porting.jpg" />
 
-                        <img src="../Images/Misc-Images/DWLevel1-Image.png" />
-                        <img src="../Images/Misc-Images/DWLevel2-Image.png" style="margin-top:20px;" />
+                        <img src="../Images/Brewmaster-Images/CraftPotions.jpg" />
                     </div>
                 </div>
             </div>

@@ -56,9 +56,15 @@
     <Content Include="Images\Amalie-Images\Sitting-Image.png" />
     <Content Include="Images\AmalieNew-Image.png" />
     <Content Include="Images\Brewmaster-Images\Brewmaster Logo.png" />
+    <Content Include="Images\Brewmaster-Images\CraftPotions.jpg" />
     <Content Include="Images\Brewmaster-Images\EnemyBestiary.png" />
     <Content Include="Images\Brewmaster-Images\EnemyBestiaryDoc.png" />
     <Content Include="Images\Brewmaster-Images\EnemyMechanicDoc.png" />
+    <Content Include="Images\Brewmaster-Images\Porting.jpg" />
+    <Content Include="Images\Brewmaster-Snippets\AlertEnemies1-Snippet.jpg" />
+    <Content Include="Images\Brewmaster-Snippets\AlertEnemies2-Snippet.jpg" />
+    <Content Include="Images\Brewmaster-Snippets\PawnDetect-Snippet.jpg" />
+    <Content Include="Images\Brewmaster-Snippets\SetupPerception-Snippet.jpg" />
     <Content Include="Images\Code-Snippets\AmalieBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyBehaviourTree-Snippet.png" />
     <Content Include="Images\Code-Snippets\EnemyController-Snippet.png" />
