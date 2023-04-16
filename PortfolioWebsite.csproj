@@ -77,6 +77,17 @@
     <Content Include="Images\HR-Image.png" />
     <Content Include="Images\HR-Image2.png" />
     <Content Include="Images\JN-Image.png" />
+    <Content Include="Images\LlamaParty-Images\LlamaParty-Codesnippets\BoardSystem-Snippet.png" />
+    <Content Include="Images\LlamaParty-Images\LlamaParty-Codesnippets\CardHand-OnPointerUp-Snippet.png" />
+    <Content Include="Images\LlamaParty-Images\LlamaParty-Codesnippets\CardHeadbutt-attackPlayer-Snippet.png" />
+    <Content Include="Images\LlamaParty-Images\LlamaParty-Codesnippets\DrawCode-Snippet.png" />
+    <Content Include="Images\LlamaParty-Images\LlamaParty-Codesnippets\endplayerTurn-BattleSystem-Snippet.png" />
+    <Content Include="Images\LlamaParty-Images\LlamaParty-Codesnippets\Update-canCharge-Snippet.png" />
+    <Content Include="Images\LlamaParty-Images\LP-Thumbnail-Image.png" />
+    <Content Include="Images\LlamaParty-Images\MainMenu1-Image.png" />
+    <Content Include="Images\LlamaParty-Images\MainMenu2-Image.png" />
+    <Content Include="Images\LlamaParty-Images\Tutorial1-Image.png" />
+    <Content Include="Images\LlamaParty-Images\Tutorial2-Image.png" />
     <Content Include="Images\LP-Image.png" />
     <Content Include="Images\Me-Image.jpg" />
     <Content Include="Images\Misc-Images\Amalie1-Image.png" />

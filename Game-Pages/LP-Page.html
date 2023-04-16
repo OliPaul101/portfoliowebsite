@@ -12,7 +12,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Oli Paul</title>
+    <title>Oli Paul - Llama Party</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -25,7 +25,7 @@
         </div>
     </nav>
 
-    <div class="parallax" style="background-image:url(../Images/LP-Image.png);"></div>
+    <div class="parallax" style="background-image:url(../Images/LlamaParty-Images/LP-Thumbnail-Image.png);"></div>
 
     <div class="gamePageIntro">
         <h1>Llama Party</h1>
@@ -38,7 +38,7 @@
         <h2>Intro</h2>
         <p>
             Llama Party is my final project for year 3 for my BSc Games Development course at Norwich University of the Arts. Inspired by card games such as Hearthstone, Marvel Snaps and
-            Gwent, Llama Party is my take on the card game genre. Using AI generated art for the card art and machine learning agents for the AI, this game is truly the AI passion project of my dreams.
+            Gwent. Llama Party is my take on the card game genre. Using AI generated art for the card art and machine learning agents for the opponent AI, this game is truly the AI passion project of my dreams.
             The goal of Llama Party is quite simple, you must accumulate the most Llama Points to win. To accumulate these points you must play cards. Cards however can be destroyed, headbutt, yelled at, etc.
         </p>
 
@@ -49,27 +49,148 @@
             <b>However, keep an eye on this page/ on my socials as I plan on posting gameplay videos soon!</b>
         </p>
 
+        <h2 style="text-align:center;">Test Build - First Level</h2>
+
+        <iframe width="500" height="415" style="margin-right:auto; margin-left:auto; display:block;" src="https://www.youtube.com/embed/DhDRVd4rCyQ" frameborder="0" allowfullscreen></iframe>
+
         <!-- Collapsible info -->
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                        Screenshots <i class="fa fa-caret-square-o-down"></i>
+                        Story & Tutorial Level <i class="fa fa-caret-square-o-down"></i>
                     </a>
                 </div>
                 <div id="collapseOne" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <img src="../Images/Misc-Images/LP1-Image.png" style="margin-bottom:25px;" />
-                        <img src="../Images/Misc-Images/LP2-Image.png" style="margin-bottom:25px;" />
-                        <img src="../Images/Misc-Images/LP3-Image.png" />
+                        <h5>The Story</h5>
+                        <p>
+                            Yes that's right! There is a small story in Llama Party, mostly so it's a a bit easier to structure the game and levels.
+                            The story in Llama Party is that you are a Llama in prison and you make a deal with a Demon to escape. But your escape is stopped by The Warden (the first opponent in the tutorial level)
+                            After the escape, The Demon has plans of their own.
+                        </p>
+
+                        <h5>Tutorial Level</h5>
+                        <p>
+                            The first level of the game is when you escape from prison and are faced up against The Warden. This is the tutorial level.
+                            The tutorial level serves as an easing into the game and allows the player to grasp the core mechanics of Llama Party.
+                        </p>
+                        <p>
+                            To help explain the mechanics, The Demon has it's own dialogue box and gives hints and tips on how to play the game.
+                        </p>
+
+                        <img src="../Images/LlamaParty-Images/Tutorial1-Image.png" style="margin-bottom:25px;" />
+                        <p>
+                            The Demon starts the level off by explaining that the player has made a deal with them to escape prison. The Demon then
+                            gives the player their deck to face off against The Warden.
+                        </p>
+
+                        <img src="../Images/LlamaParty-Images/Tutorial2-Image.png" style="margin-bottom:25px;" />
+                        <p>
+                            Once the player takes the deck of cards from The Demon. The battle starts and The Demon tells the player how to play the game along
+                            with some hints and tips.
+                        </p>
+
+                        <p>
+                            I'm glad I took the time to implement this as it makes the game a lot easier to pick up and play.
+                        </p>
                     </div>
                 </div>
             </div>
 
+            <!-- Hand and Board Code accordion card -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                        Hand and Board Systems <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5>Player Hand System</h5>
+                        <img src="../Images/LlamaParty-Images/LlamaParty-Codesnippets/DrawCode-Snippet.png" style="margin-bottom:25px;" />
+                        <p>
+                            The code above is from DrawSystem.cs and allows the player to draw up to three cards at the start of every turn.
+                        </p>
+                        <p>
+                            It firstly checks to see if the deck has more than one card; then it picks a random card from 0 to the maximum size of the deck list; then a for
+                            loop going through each availabe space in the players hand. If it finds a space, then it set actives, or draws, the card into that space
+                            in the players hand.
+                        </p>
+
+                        <h5>Board System</h5>
+                        <p>
+                            The board system controls the pieces on the board after the player plays a card from their hand. Once the player plays a
+                            card from their hand, a 3D board 'piece' is played onto the board representing that card.
+                        </p>
+                        <img src="../Images/LlamaParty-Images/LlamaParty-Codesnippets/BoardSystem-Snippet.png" style="margin-bottom:25px;" />
+                        <p>
+                            The board system uses an array of Transforms and Bools, literally. The Transform array 'boardSlots' is so I can edit the position of where these
+                            pieces get played in the level. The Bool array 'availableBoardSlots' is to keep track of which boardSlots have a card piece.
+                        </p>
+                        <p>
+                            The code for the board system is quite simple. It goes through which board slots are available, using a for loop. Then if one is true, i.e. available, then
+                            it will instantiate (spawn) a card piece there at the location of the Transform but will also make it a child object of the Transform gameobject.
+                        </p>
+
+                        <h5>Card Hand Script</h5>
+                        <img src="../Images/LlamaParty-Images/LlamaParty-Codesnippets/CardHand-OnPointerUp-Snippet.png" style="margin-bottom:25px;" />
+                        <p>
+                            The 'Card Hand Script' is the script that the card in the players hand has. This script controls playing its represented piece onto the board
+                            if the player wants to play that card. Before being played, the card checks to see if the current amount of Llama Orbs (the cost to play a card)
+                            is enough and if the player side is available (i.e. check to see if the players side is already full). If both are true then the card gets played and then
+                            gets discarded.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Abilities accordion card -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                        Card Abilities Code <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5>HEADBUTT Ability</h5>
+                        <img src="../Images/LlamaParty-Images/LlamaParty-Codesnippets/endplayerTurn-BattleSystem-Snippet.png" style="margin-bottom:25px;" />
+
+                        <p>
+                            In the Battle System script, when the player ends their turn. A for loop goes through all the availableBoardSlots that have
+                            a card on them, basically the opposite to what the playCard function does as that checks for all availableBoardSlots that do not
+                            have cards on them.
+                        </p>
+
+                        <p>
+                            If it finds a board slot that has a card on it, then it checks to see if that card has the 'CardHeadButt' script component attached to
+                            it. If it does then it executes a function on that gameobject from that script called 'attackPlayer'.
+                        </p>
+
+                        <img src="../Images/LlamaParty-Images/LlamaParty-Codesnippets/CardHeadbutt-attackPlayer-Snippet.png" style="margin-bottom:25px;" />
+                        <p>
+                            The attackPlayer function is what you'd expect it to be, in that it attacks the opposing player after the other player has activated it.
+                            It checks to see if headButt has been activated, if activated then checks to see if this a player 1 card or a player 2 card, so that points
+                            can be added or taken away accordingly. Then the piece on the board is raised up, just so the player can have some visualisation of what is happening.
+                            Then canCharge is set to true.
+                        </p>
+
+                        <img src="../Images/LlamaParty-Images/LlamaParty-Codesnippets/Update-canCharge-Snippet.png" style="margin-bottom:25px;" />
+                        <p>
+                            If canCharge is true then the piece flies towards the opposing players portrait and destroys itself and takes away the points in the process. I will be
+                            adding some particle effects for this as well when the piece destroys itself for more visual feedback and fun.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turn Based System accordion card -->
             <div class="card">
                 <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                        Turn Based Script <i class="fa fa-caret-square-o-down"></i>
+                        Turn Based System <i class="fa fa-caret-square-o-down"></i>
                     </a>
                 </div>
                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -96,6 +217,21 @@
                             I programmed that only plays one card as I am still testing the cards mechanics. After the basic AI has played its card, it ends its turn
                             and starts the players turn again at the beginning of turn 2.
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Menu accordion card -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                        Main Menu <i class="fa fa-caret-square-o-down"></i>
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="../Images/LlamaParty-Images/MainMenu1-Image.png" style="margin-bottom:25px;" />
+                        <img src="../Images/LlamaParty-Images/MainMenu2-Image.png" style="margin-bottom:25px;" />
                     </div>
                 </div>
             </div>
