@@ -3,292 +3,417 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
 <link rel="stylesheet" href="CSS/Styles.css" />
+<script src="https://kit.fontawesome.com/5d7f83735b.js" crossorigin="anonymous"></script>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oli Paul</title>
+    <title>Oli Paul Portfolio</title>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fa fa-square"></i> OLI PAUL</a>
+            <h1 class="navbar-brand" href="#">OLI PAUL_</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#section1"><b>Projects</b></a>
+                        <a class="nav-link" href="#section1"><b>Home_</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2"><b>About</b></a>
+                        <a class="nav-link" href="#section2"><b>Portfolio_</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3"><b>Contact</b></a>
+                        <a class="nav-link" href="#section3"><b>Services_</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3"><b>Contact_</b></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-
     <!--Projects Showcase-->
     <div class="projectsShowcase">
 
-        <!--A little about me-->
-        <div class="container" id="section2" style="background-color:black; color:white; padding-bottom:25px;">
-            <div class="portfolioTitle text-center container">
+        <!-- Hero Section -->
+        <div class="container" id="section1">
+            <div class="heroSection">
+                <h1>Hello World<b>!</b></h1>
+                <h4>If you are looking for a helpful friendly developer <br /> with a background in games development, <br /> look no further!</h4>
+            </div>
+        </div>
+
+        <!-- Portfolio/ Projects -->
+        <div class="container">
+            <div class="portfolioSection" id="section2">
+                <h1>Portfolio_</h1>
+                <!-- DWA & NTFL -->
                 <div class="row">
-                    <div class="col">
-                        <h1><i class="fa fa-square"></i> A Little About Me</h1>
-                    </div>
-                    <div class="col">
-
-                    </div>
-                </div>
-            </div>
-            <p>
-                Hi there! I'm Oli Paul, a game developer currently at Norwich University of the Arts doing a BSc in Games Development.
-                This website contains and represents all of my work related to games development! Feel free to hover over the images listed
-                for more information about each project and if you wish to contact me my details are at the bottom.
-            </p>
-
-            <button type="button" onclick="parent.location='https://github.com/OliPaul036202'" style="margin-left:auto;margin-right:auto;" class="btn btn-primary">My Github Profile</button>
-        </div>
-
-        <!--Projects Title-->
-        <div class="portfolioTitle container text-center" id="section1" style="background-color:white;">
-            <div class="row">
-                <div class="col">
-                    <h1><i class="fa fa-square"></i> Projects</h1>
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container text-center" style="background-color:white;">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/DW-Image.png" class="image" />
-                        <div class="description">
-                            <h2>Digital Wizards</h2>
-
-                            <button type="button" onclick="document.location='Game-Pages/DW-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="ue4-tag"><p>UE4</p></div></li>
-                                <li><div class="Cplus-tag"><p>C++</p></div></li>
-                            </ul>
+                    <div class="col-sm-6">
+                        <div class="portfolioBox">
+                            <!-- Project Title -->
+                            <h3>Dog Walking Adventures</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- Tools Tags -->
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="ue5-tag tag"><h4>UE5</h4></div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="CP-tag tag"><h4>C++</h4></div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="BP-tag tag"><h4>BP</h4></div>
+                                        </div>
+                                    </div>
+                                    <!-- Small Description -->
+                                    <p>Dog Walking Adventures is a first person exploration, puzzle and walking game! Players can walk their chosen dog and do quests, collect journals and enjoy the general relaxing nature of the game.</p>
+                                    <!-- Buttons -->
+                                    <div class="portBoxButtons">
+                                        <a type="button" class="btn btn-primary" href="https://store.steampowered.com/app/3007590/Dog_Walking_Adventures/">Steam Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="Images/DWA-Images/DWA_Logo.png" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        My role for Digital Wizards was programming and designing the AI using C++ and Unreal Engine 4. In the end we had three fully functional AI.
-                        An exploding skeleton, a punching slime and a mimic chest!
-                    </p>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/Amalie-Images/Amalie-MainMenu-Image.png" class="image" />
-                        <div class="description">
-                            <h2>Dog Walking Simulator</h2>
-
-                            <button type="button" onclick="document.location='Game-Pages/Amalie-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="ue4-tag"><p>UE4</p></div></li>
-                                <li><div class="bp-tag"><p>Blueprint</p></div></li>
-                            </ul>
+                    <div class="col-sm-6">
+                        <div class="portfolioBox">
+                            <!-- Project Title -->
+                            <h3>No Time For Loot!</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- Tools Tags -->
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="unity-tag tag"><h4>Unity</h4></div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="csharp-tag tag"><h4>C#</h4></div>
+                                        </div>
+                                    </div>
+                                    <!-- Small Description -->
+                                    <p>No Time For Loot! Is a single player card battler that will have you managing your stash weight while trying to acqure as much gold as you can! Created within a week by myself for Brackeys Game Jam 2025.1.</p>
+                                    <!-- Buttons -->
+                                    <div class="portBoxButtons">
+                                        <a type="button" class="btn btn-primary" href="https://oli-01.itch.io/no-time-for-loot">Itch.io Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="Images/NTFL-Images/NTFL_Logo.png" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        Dog walking simulator is a project I am currently developing for the Safe in our World charity. I wanted to make a game that can be relaxing and casual
-                        but, also a game that would allow me show what I have learned developing AI in Unreal Engine.
-                    </p>
                 </div>
-            </div>
 
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/LlamaParty-Images/LP-Thumbnail-Image.png" class="image" />
-                        <div class="description">
-                            <h2>Llama Party</h2>
-
-                            <button type="button" onclick="document.location='Game-Pages/LP-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="unity-tag"><p>Unity</p></div></li>
-                                <li><div class="Csharp-tag"><p>C#</p></div></li>
-                            </ul>
+                <!-- DWS & Llama Party -->
+                <div class="row rowSpacer">
+                    <div class="col-sm-6">
+                        <div class="portfolioBox">
+                            <!-- Project Title -->
+                            <h3>Dog Walking Simulator [Safe In Our World]</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- Tools Tags -->
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="ue4-tag tag"><h4>UE4</h4></div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="CP-tag tag"><h4>C++</h4></div>
+                                        </div>
+                                    </div>
+                                    <!-- Small Description -->
+                                    <p>Dog Walking Simulator [Safe In Our World] was developed two years ago during my final year at university for the charity Safe In Our World.</p>
+                                    <!-- Buttons -->
+                                    <div class="portBoxButtons">
+                                        <a type="button" class="btn btn-primary" href="Game-Pages/Amalie-Page.html">More <i class="fa-solid fa-angles-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="Images/Amalie-Images/Amalie-MainMenu-Image.png" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        Llama Party is my most ambitous project yet. For my final project for year 3 at University, I have decided to make a card game. But, for the AI in this game,
-                        I am using Unity's ML (Machine Learning) agents to train them.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/Brewmaster-Images/Brewmaster Logo.png" class="image" />
-                        <div class="description">
-                            <h2>Brewmaster</h2>
-
-                            <button type="button" onclick="document.location='Game-Pages/Brewmaster-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="ue5-tag"><p>UE5</p></div></li>
-                                <li><div class="Cplus-tag"><p>C++</p></div></li>
-                            </ul>
+                    <div class="col-sm-6">
+                        <div class="portfolioBox">
+                            <!-- Project Title -->
+                            <h3>Llama Party</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- Tools Tags -->
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="unity-tag tag"><h4>Unity</h4></div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="csharp-tag tag"><h4>C#</h4></div>
+                                        </div>
+                                    </div>
+                                    <!-- Small Description -->
+                                    <p>Llama Party is a very ambitous card battler game that I designed and developed for my final project at university. I utilised Unity's ML (Machine Learning) agents to train the AI to play my own game.</p>
+                                    <!-- Buttons -->
+                                    <div class="portBoxButtons">
+                                        <a type="button" class="btn btn-primary" href="Game-Pages/LP-Page.html">More <i class="fa-solid fa-angles-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="Images/LlamaParty-Images/LP-Thumbnail-Image.png" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        Brewmaster was a game designed and prototyped in a week, that me and others listed are continuing to make into a first build
-                        and 'proof of concept'. My main roles for this project was AI designer and programmer.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/HR-Image2.png" class="image" />
-                        <div class="description">
-                            <h2>Hardest Route</h2>
-
-                            <button type="button" onclick="document.location='Game-Pages/HR-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="ue5-tag"><p>UE5</p></div></li>
-                                <li><div class="bp-tag"><p>Blueprint</p></div></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        Hardest Route was a top down dungeon crawler game developed for the Global Games Jam 2023. As we were a small team, I had a hand in everything
-                        from AI and gameplay to audio and level design.
-                    </p>
                 </div>
             </div>
         </div>
 
-        <!--Ongoing Projects Title-->
-        <div class="portfolioTitle container text-center" style="background-color:white;">
-            <div class="row">
-                <div class="col">
-                    <h1><i class="fa fa-square"></i> Other Projects</h1>
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
+        <!-- More Projects -->
+        <div style="width: 100%; text-align:center; margin-top:30px;">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                More Projects <i class="fa-solid fa-arrow-down"></i>
+            </button>
         </div>
-
-        <!--Ongoing Projects Showcase-->
-        <div class="container text-center" style="background-color:white;">
-            <div class="row" style="padding-bottom:40px;">
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/JN-Image.png" class="image" />
-                        <div class="description">
-                            <h2>Joe Ninja: The Revival</h2>
-
-                            <button type="button" onclick="document.location='Game-Pages/JN-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="unity-tag"><p>Unity</p></div></li>
-                                <li><div class="Csharp-tag"><p>C#</p></div></li>
-                            </ul>
+        <div class="collapse" id="collapseExample">
+            <div class="card" style="background:none;">
+                <!-- Digital Wizard & Brewmaster -->
+                <div class="container">
+                    <div class="row rowSpacer">
+                        <div class="col-sm-6">
+                            <div class="portfolioBox">
+                                <!-- Project Title -->
+                                <h3>Digital Wizards</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- Tools Tags -->
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="ue4-tag tag"><h4>UE4</h4></div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="CP-tag tag"><h4>C++</h4></div>
+                                            </div>
+                                        </div>
+                                        <!-- Small Description -->
+                                        <p>Digital Wizards is a game that I helped develop in a team during my time at university. My roles on the project was gameplay and AI programming and designing.</p>
+                                        <!-- Buttons -->
+                                        <div class="portBoxButtons">
+                                            <a type="button" class="btn btn-primary" href="Game-Pages/DW-Page.html">More <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="Images/DW-Image.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="portfolioBox">
+                                <!-- Project Title -->
+                                <h3>Brewmaster</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!-- Tools Tags -->
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="ue5-tag tag"><h4>UE5</h4></div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="CP-tag tag"><h4>C++</h4></div>
+                                            </div>
+                                        </div>
+                                        <!-- Small Description -->
+                                        <p>Brewmaster was designed and prototyped in a week by myself and a team. This task was assigned to us at university to help us understand how to pitch to video game publishers. I was the AI designer and programmer</p>
+                                        <!-- Buttons -->
+                                        <div class="portBoxButtons">
+                                            <a type="button" class="btn btn-primary" href="Game-Pages/Brewmaster-Page.html">More <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="Images/Brewmaster-Images/Brewmaster Logo.png" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        Joe Ninja: The Revival is my 2D platformer mobile game, and my first ever self published game.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="img-wrap">
-                        <img src="Images/SB-Image.png" class="image" />
-                        <div class="description">
-                            <h2>SIMPLE. BOX.</h2>
 
-                            <button type="button" onclick="document.location='Game-Pages/SB-Page.html'" class="btn btn-outline-light">More</button>
-
-                            <ul>
-                                <li><div class="unity-tag"><p>Unity</p></div></li>
-                                <li><div class="Csharp-tag"><p>C#</p></div></li>
-                            </ul>
+                    <!-- Hardest Route & Joe Ninja -->
+                    <div class="row rowSpacer">
+                        <div class="col-sm-6">
+                            <div class="portfolioBox">
+                                <!-- Project Title -->
+                                <h3>Hardest Route</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!-- Tools Tags -->
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="ue5-tag tag"><h4>UE5</h4></div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="BP-tag tag"><h4>BP</h4></div>
+                                            </div>
+                                        </div>
+                                        <!-- Small Description -->
+                                        <p>Hardest Route is a top down dungeon crawler game developed by myself and a team for the Global Games Jam 2023.</p>
+                                        <!-- Buttons -->
+                                        <div class="portBoxButtons">
+                                            <a type="button" class="btn btn-primary" href="Game-Pages/HR-Page.html">More <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="Images/HR-Image.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="portfolioBox">
+                                <!-- Project Title -->
+                                <h3>Joe Ninja: The Revival</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!-- Tools Tags -->
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="unity-tag tag"><h4>Unity</h4></div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="csharp-tag tag"><h4>C#</h4></div>
+                                            </div>
+                                        </div>
+                                        <!-- Small Description -->
+                                        <p>Releasing in 2019, Joe Ninja: The Revival was my first ever game project and my first ever official release, releasing officially on Google Play Store!</p>
+                                        <!-- Buttons -->
+                                        <div class="portBoxButtons">
+                                            <a type="button" class="btn btn-primary" href="Game-Pages/JN-Page.html">More <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="Images/JN-Image.png" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p style="margin-right: 10%; margin-left: 10%; padding-top:15px;">
-                        SIMPLE. BOX. is a third person puzzle game developed for the Yogscast Game Jam in 2021, during my second year of University.
-                        Using C# and Unity, I had only 48 hours to make the game.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!--About me-->
-    <div class="aboutContainer" id="section2">
-        <div class="portfolioTitle text-center container">
-            <div class="row">
-                <div class="col">
-                    <h1><i class="fa fa-square"></i> More About Me</h1>
-                </div>
-                <div class="col">
-
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-5">
-                <img src="Images/Me-Image.jpg" />
-            </div>
-            <div class="col-sm-7">
-                <p>
-                    I'm Oli, a game developer currently studying third year in Games Development.
-                    My game development journey started when I developed and released my first game,
-                    Joe Ninja: The Revival, on to the Google Play store.
-                    Since then I have been making, and learning
-                    more about video games. I have learnt Unity and C# in my own time and been taught C++ and Unreal Engine 4/5 at Norwich University of the Arts for Games Development.
-                </p>
+        <!-- About Me -->
+        <div class="aboutSection">
+            <div class="container">
+                <h1>About_Me_</h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Hello there! I'm Oli, a developer that can make a game, website, cloud based SaaS solution, or anything else you may have in mind.
+                            Recently, I developed and released Dog Walking Adventures on Steam, and now I am looking for work in games development or any other field which allows me to utilise the knowledge that I have gained over the many years.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div style="width: 100%; text-align:center;">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="false" aria-controls="collapseExample">
+                                Education <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                        <div class="collapse" id="collapseEducation">
+                            <div class="educationSection">
+
+                                <div class="educationBox">
+                                    <h5>BSc (Hons) Games Development, First Class (1st)</h5><i class="fa-solid fa-gamepad"></i>
+                                    <p>Norwich University of the Arts</p>
+                                    <p>2020 - 2023</p>
+                                </div>
+
+                                <div class="educationBox">
+                                    <h5>BTEC National Extended Diploma in Information Technology, Distinction Merit Merit</h5><i class="fa-solid fa-database"></i>
+                                    <p>City College Norwich</p>
+                                    <p>2018 - 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer/ Contact Me -->
-    <div class="contactContainer" id="section3" style="padding-bottom:25px;">
-        <div class="portfolioTitle text-center container">
-            <div class="row">
-                <div class="col">
-                    <h1><i class="fa fa-square"></i> Contact Me</h1>
+        <!-- Services -->
+        <div class="container" id="section3">
+            <div class="servicesSection">
+                <h1>_Services</h1>
+
+                <div class="row rowSpacer">
+                    <div class="col-sm-4">
+                        <div class="servicesBox">
+                            <h2>Game Development</h2><i class="fa-solid fa-gamepad"></i>
+                            <hr />
+                            <p>Full-cycle game development using Unreal Engine or Unity, from concept to release.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="servicesBox">
+                            <h2>Back-End Development</h2><i class="fa-solid fa-database"></i>
+                            <hr />
+                            <p>Server-side logic, database integration, and API development for games and web apps.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="servicesBox">
+                            <h2>Web <br /> Development</h2><i class="fa-solid fa-code"></i>
+                            <hr />
+                            <p>Building responsive websites and web applications using modern frameworks.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
 
+                <div class="row rowSpacer">
+                    <div class="col-sm-4">
+                        <div class="servicesBox">
+                            <h2>Consulting</h2><i class="fa-solid fa-comments"></i>
+                            <hr />
+                            <p>Technical consulting on game design, architecture, or technology choices.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="servicesBox">
+                            <h2>Bug Fixing & Support</h2><i class="fa-solid fa-bug"></i>
+                            <hr />
+                            <p>Debugging, troubleshooting, and ongoing support for existing projects.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="servicesBox">
+                            <h2>General <br /> Freelance</h2><i class="fa-solid fa-robot"></i>
+                            <hr />
+                            <p>Don't see anything quite right for you? Get in contact anyway and let's talk about it!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <p>
-            Feel free to contact me on any of my listed social media or send me an email at: <br />
-            <b>olipaul036@gmail.com</b>
-        </p>
 
-        <a href="https://www.linkedin.com/in/oli-paul-138059197/" class="fa fa-linkedin" style="font-size:28px;"></a>
-        <a href="https://twitter.com/OliPaul036" class="fa fa-twitter" style="font-size:28px;"></a>
-    </div>
+        <!-- Contact -->
+        <div class="contactSection" id="section4">
+            <div class="container">
+                <h1>_Contact_</h1>
+                <p style="border: 1px solid white; border-radius:10px; padding:10px;">Feel free to get in touch via email or direct message me on one of the linked social media.</p>
+                <p>Email: <b>olipaul036@gmail.com</b></p>
+
+                <a href="https://www.linkedin.com/in/oli-paul-138059197/" style="font-size:40px;"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/olipaul8/" style="font-size:40px;"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
 </body>
 </html>
 <script>
